@@ -3,12 +3,14 @@ import { Box } from "@mui/material";
 import styles from "../styles/Home.module.css";
 import { MainLayout } from "@/components/layout";
 import { NextPageWithLayout } from "./_app";
-import { HeroSection } from "@/components/home";
+import { FeatureWorks, HeroSection, RecentPosts } from "@/components/home";
 
 const Home: NextPageWithLayout = () => {
   return (
     <Box>
       <HeroSection />
+      <RecentPosts />
+      <FeatureWorks />
     </Box>
   );
 };
