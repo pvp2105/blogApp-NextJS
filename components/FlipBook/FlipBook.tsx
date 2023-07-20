@@ -2,7 +2,7 @@ import HTMLFlipBook from "react-pageflip";
 import { useRef, useEffect } from "react";
 // import { usePdf } from "react-pdf-js";
 import { usePdf } from "@mikecousins/react-pdf";
-import MyPdfViewer from "./PDFReact";
+import MyPdfViewer from "./PDFPages";
 
 function BookFlip() {
   const fileUrl =
@@ -18,7 +18,7 @@ function BookFlip() {
   const numOfPage = pdfDocument?._pdfInfo?.numPages;
 
   return (
-    <div style={{ marginTop: "100px", marginLeft: "120px" }}>
+    <div style={{ marginTop: "100px", marginLeft: "200px" }}>
       <HTMLFlipBook
         width={500}
         height={700}
@@ -32,7 +32,7 @@ function BookFlip() {
         minHeight={0}
         maxHeight={0}
         drawShadow={true}
-        flippingTime={1000}
+        flippingTime={1500}
         usePortrait={true}
         startZIndex={0}
         autoSize={true}
