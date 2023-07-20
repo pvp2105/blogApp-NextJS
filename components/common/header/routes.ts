@@ -4,12 +4,12 @@ export const ROUTE_LIST = [
         path: '/',
     },
     {
-        label: 'Works',
-        path: '/works',
+        label: 'Video Page',
+        path: '/videoPage',
         requireLogin: true,
     },
     {
-        label: 'Blog',
-        path: '/blog',
+        label: 'PDF Page',
+        path: '/pdfPage',
     },
 ]

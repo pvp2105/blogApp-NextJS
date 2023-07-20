@@ -13,7 +13,7 @@ export let theme = createTheme({
         },
         secondary: {
             light: '#EDF7FA',
-            main: '#00A8CC',
+            main: '#00A8CC'
         },
         error: {
             main: red.A400,
@@ -52,17 +52,20 @@ export let theme = createTheme({
             },
             variants: []
         },
-        // MuiTypography: {
-        //     styleOverrides: {
-        //         root: {
-        //             color: 'black',
+        MuiLink: {
+            defaultProps: {
+                underline: 'none',
+            },
+            styleOverrides: {
+                root: {
+                    color: 'black',
 
-        //             '&:hover': {
-        //                 color: '#FF6464',
-        //             },
-        //         },
-        //     },
-        // },
+                    '&:hover, &.active': {
+                        color: '#FF6464',
+                    },
+                },
+            },
+        },
         MuiButton: {
             variants: [
                 {

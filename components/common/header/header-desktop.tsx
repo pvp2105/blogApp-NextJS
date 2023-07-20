@@ -1,4 +1,4 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Stack, Link as MuiLink } from "@mui/material";
 import { Box } from "@mui/system";
 import * as React from "react";
 import { ROUTE_LIST } from "./routes";
@@ -13,20 +13,13 @@ export function HeaderDesktop() {
       <Container>
         <Stack direction="row" justifyContent="flex-end">
           {ROUTE_LIST.map((route) => (
-            <Link
-              key={route.path}
-              href={route.path}
-              passHref
-              style={{
-                textDecoration: "underline",
-                marginLeft: "10px",
-                color: router.pathname === route.path ? "red" : "inherit",
-              }}
-              className={clsx({ active: router.pathname === route.path })}
-            >
-              <Typography sx={{ ml: 2, fontWeight: "medium" }}>
+            <Link key={route.path} href={route.path} passHref>
+              <MuiLink
+                sx={{ ml: 2, fontWeight: "medium" }}
+                className={clsx({ active: router.pathname === route.path })}
+              >
                 {route.label}
-              </Typography>
+              </MuiLink>
             </Link>
           ))}
         </Stack>
