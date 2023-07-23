@@ -12,4 +12,8 @@ export const ROUTE_LIST = [
         label: 'PDF Page',
         path: '/pdfPage',
     },
+    {
+        label: 'Export Page',
+        path: '/exportPage',
+    },
 ]

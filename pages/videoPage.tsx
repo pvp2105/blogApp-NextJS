@@ -5,9 +5,9 @@ import VideoM3U8 from "@/components/JWPlayer/JWPlayerM3U8";
 import VideoMP4 from "@/components/JWPlayer/JWPlayerMp4";
 import VideoMP3 from "@/components/JWPlayer/JWPlayerMp3";
 
-export interface WorksPageProps {}
+export interface VideoPageProps {}
 
-export default function WorksPage(props: WorksPageProps) {
+export default function VideoPage(props: VideoPageProps) {
   return (
     <div>
       <Typography component="h2" variant="h5" fontWeight="bold" mb={5}>
@@ -33,6 +33,6 @@ export default function WorksPage(props: WorksPageProps) {
   );
 }
 
-WorksPage.getLayout = (children: any) => {
+VideoPage.getLayout = (children: any) => {
   return <MainLayout>{children}</MainLayout>;
 };
